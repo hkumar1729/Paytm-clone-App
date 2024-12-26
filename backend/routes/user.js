@@ -91,6 +91,7 @@ router.post('/signin', async (req,res)=>{
     }, JWT_SECERET)
     res.json({
         msg:"logged in",
+        name:user.first_name,
         token: token
     })
 })
