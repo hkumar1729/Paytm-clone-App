@@ -42,17 +42,3 @@ export default function User(){
         
     </div>
 }
-
-/*<div className="flex justify-between items-center bg-slate-100 p-2 mt-3">
-            <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center bg-gray-300 rounded-full border-0 w-10 h-10 ml-3">
-                    H
-                </div>
-                <div className="font-semibold text-lg ml-3">
-                    Harsh
-                </div>
-            </div>
-            <div>
-                <button className='bg-black text-white rounded w-32 py-1 px-3 mr-5'>Send Money</button>
-            </div>
-        </div>*/

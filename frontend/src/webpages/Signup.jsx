@@ -7,12 +7,14 @@ import Bottomwarning from '../components/Bottomwarning'
 import { LastNameAtom, FirstNameAtom, UsernameAtom, PasswordAtom } from '../store/atom/signup'
 import {useRecoilValue, useRecoilState, useSetRecoilState} from 'recoil'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 export default function Signup(){
     const [FirstName, setFirstName] = useRecoilState(FirstNameAtom)
     const [LastName, setLastName] = useRecoilState(LastNameAtom)
     const [Username, setUsername] = useRecoilState(UsernameAtom)
     const [Pass, setPass] = useRecoilState(PasswordAtom)
+    const navigate = useNavigate()
 
     return <div className="flex items-center justify-center min-h-screen">
         <div className="flex items-center justify-center w-[32rem] h-[38rem] bg-slate-400 rounded-xl shadow-2xl">
@@ -43,8 +45,15 @@ export default function Signup(){
                         username:Username,
                         password:Pass
                     })
-                    localStorage.setItem('token', `Bearer ${response.data.token}`)
-                    alert(response.data.msg)} catch(error){
+                    if(response.data.msg === 'User created successfully'){
+                        localStorage.setItem('token', `Bearer ${response.data.token}`)
+                        alert(response.data.msg)
+                        navigate(`/dashboard?name=${FirstName}`)
+                    }
+                    else{
+                        alert(response.data.msg)
+                    }
+                    } catch(error){
                         alert(error.response.data.msg)
                     }
                     
