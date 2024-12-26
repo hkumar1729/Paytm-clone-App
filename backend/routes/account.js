@@ -15,7 +15,7 @@ router.get('/balance', authMiddleware ,async (req, res)=>{
         userId: req.userId
     })
     res.json({
-        balance: userBalance.balance
+        balance: (userBalance.balance).toFixed(2)
     })
 })
 
