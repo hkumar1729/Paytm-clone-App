@@ -5,7 +5,7 @@ import Button from '../components/Button'
 import Password from '../components/Password'
 import Bottomwarning from '../components/Bottomwarning'
 import { LastNameAtom, FirstNameAtom, UsernameAtom, PasswordAtom } from '../store/atom/signup'
-import {useRecoilValue, useRecoilState, useSetRecoilState} from 'recoil'
+import {useRecoilValue, useRecoilState} from 'recoil'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 

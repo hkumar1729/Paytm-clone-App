@@ -26,6 +26,7 @@ export default function Signup(){
                         password:pass
                     }).then((resolve)=>{
                         if(resolve.data.msg === 'logged in'){
+                            localStorage.setItem('token', `Bearer ${resolve.data.token}`)
                             alert(resolve.data.msg)
                             navigate(`/dashboard?name=${resolve.data.name}`)
                         }

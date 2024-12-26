@@ -1,14 +1,5 @@
-import { useState } from "react"
 
 export function AmountField({placeholder, label, onChange}){
-    const [input,setInput] = useState('')
-
-    const onChangeHandler = (e)=>{
-        const inputValue = e.target.value
-        if(/^\d*$/.test(inputValue)){
-            setInput(inputValue)
-        }
-    }
     return <div>
         <div className="text-left ml-2 mt-3">
           {label}

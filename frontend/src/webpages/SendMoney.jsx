@@ -27,14 +27,19 @@ export default function SendMoney(){
                         setAmount(e.target.value)
                     }} label={"Amount (in Rs)"} placeholder={'Enter amount'}/>
                     <button onClick={()=>{
-                        axios.post('http://localhost:3000/api/v1/account/transaction',{
+                        try{axios.post('http://localhost:3000/api/v1/account/transaction',{
                             to:id,
                             amount:parseInt(amount)
                         },{
                             headers:{
                                 authorization: localStorage.getItem('token')
                             }
-                        })
+                        }).then((response)=>{
+                            alert(response.data.msg)
+                        })}
+                        catch(error){
+                            alert('Try again after some time')
+                        }
                     }} className='bg-green-500 text-white rounded w-72 py-1 px-3 mt-5'>Pay</button>
                 </div>
         </div>
