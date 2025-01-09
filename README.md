@@ -124,9 +124,6 @@ npm run dev
   - Use MongoDB Compass to visualize and manage your database.
   - Make sure your cluster allows connections from your IP address.
 
-- **Environment Variables**:
-  - Use a `.env` file to securely store your MongoDB connection string and JWT secret.
-
 - **Common Commands**:
   - Install dependencies: `npm install`.
   - Start backend: `node index.js`.
