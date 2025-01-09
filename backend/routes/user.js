@@ -34,7 +34,6 @@ router.post('/signup', async (req,res)=>{
         return res.json({
             msg:'Invalid inputs'
         })
-        return;
     }
     const check = await Users.findOne({
         username: body.username
@@ -68,7 +67,7 @@ router.post('/signin', async (req,res)=>{
     const body = req.body
     const {success} = signinSchema.safeParse(body)
     if(!success){
-        res.status(400).json({
+        return res.status(400).json({
             msg: 'Invalid input'
         })
     }

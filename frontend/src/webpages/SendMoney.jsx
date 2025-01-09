@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Heading } from "../components/Heading";
 import { AmountField } from "../components/sendmoneyinput";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import axios from "axios";
 
 export default function SendMoney(){
@@ -9,6 +9,7 @@ export default function SendMoney(){
     const [searchparams] = useSearchParams()
     const id = searchparams.get('id')
     const name = searchparams.get('name')
+    const navigate = useNavigate()
 
 
     return <div className="flex justify-center items-center min-h-screen bg-slate-100">
@@ -36,6 +37,7 @@ export default function SendMoney(){
                             }
                         }).then((response)=>{
                             alert(response.data.msg)
+                            navigate(`../dashboard?name=${name}`)
                         })}
                         catch(error){
                             alert('Try again after some time')

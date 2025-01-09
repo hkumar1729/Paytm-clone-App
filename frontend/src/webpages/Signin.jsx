@@ -20,22 +20,21 @@ export default function Signup(){
                 <Subheading label={'Enter your credentials to access your account'}/>
                 <Inputfield onChange={(e)=>{setUsername(e.target.value)}} label={'Username'} placeholder={'Johndoe@example.com'}/>
                 <Password onChange={(e)=>{setpass(e.target.value)}} label={'Password'} placeholder={'Password'}/>
-                <Button onClick={()=>{
-                    try{axios.post('http://localhost:3000/api/v1/user/signin',{
+                <Button onClick={async ()=>{
+                    try{const response = await axios.post('http://localhost:3000/api/v1/user/signin',{
                         username: username,
                         password:pass
-                    }).then((resolve)=>{
+                    })
                         if(resolve.data.msg === 'logged in'){
-                            localStorage.setItem('token', `Bearer ${resolve.data.token}`)
-                            alert(resolve.data.msg)
-                            navigate(`/dashboard?name=${resolve.data.name}`)
+                            localStorage.setItem('token', `Bearer ${response.data.token}`)
+                            alert(response.data.msg)
+                            navigate(`/dashboard?name=${response.data.name}`)
                         }
                         else{
-                            alert(resolve.data.msg)
-                        }
-                    })}
-                    catch(error){
-                        alert('something wrong try again')
+                            alert(response.data.msg)
+                    }
+                }catch(error){
+                    alert(error.response.data.msg)
                     }
                 }} label={'Sign in'}/>
                 <Bottomwarning label={"Don't have an account?"} to={'/signup'} buttonText={'Sign up'}/>
