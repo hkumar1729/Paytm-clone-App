@@ -131,3 +131,42 @@ npm run dev
 
 ---
 
+## Future Development
+
+To make the Paytm clone application more robust, scalable, and user-friendly, the following features and improvements are planned for future releases:
+
+### 1. Payment Gateway Integration
+- **Add multiple payment gateways** to support secure transactions, including Razorpay, Stripe, and PayPal, alongside traditional bank payment options.
+- Enable **international payment support** to expand the user base.
+
+### 2. Enhanced Security Features
+- Introduce **end-to-end encryption** for transactions to protect sensitive user data.
+- Add **multi-factor authentication (MFA)** to enhance account security.
+
+### 3. QR Code Payments
+- Enable **dynamic QR code generation** for fast and easy peer-to-peer payments.
+- Allow users to scan and pay at local stores or businesses via QR codes.
+
+---
+
+- **Screenshots of the Application in Action.**
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/11b9f251-be39-45d6-923f-5256b261faa1" alt="Image 1" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/77fd09f0-9d7d-4a1f-8853-8e4de96307e2" alt="Image 2" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/0527c7a9-9351-4b6d-bed6-7a55401ded47" alt="Image 3" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/fea26ef5-d8c5-42a2-9feb-29372f932e56" alt="Image 4" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center">Sign Up page.</td>
+    <td align="center">Login Page</td>
+    <td align="center">Dashboard Page</td>
+    <td align="center">Send money page</td>
+  </tr>
+</table>
+
+
+
+
+
