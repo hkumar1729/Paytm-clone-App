@@ -93,7 +93,7 @@ npm run dev
 
 ## Usage
 
-1. Open your browser and go to the frontend URL provided by the development server (usually `http://localhost:5173`) and route to url (`http://localhost:5173/signup`)
+1. Open your browser and go to the frontend URL provided by the development server (usually `http://localhost:5173`) and route to url (`http://localhost:5173/signup`) manually.
 2. Explore the app's features:
    - User authentication (JWT).
    - Payment processing with transaction handling.
