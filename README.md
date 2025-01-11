@@ -4,6 +4,24 @@
 This is a **Paytm-clone application** built using modern web development tools and technologies. It features a secure and efficient payment flow with input validation, backend and frontend routing, and optimized state management.
 
 ---
+- **Screenshots of the Application in Action.**
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/11b9f251-be39-45d6-923f-5256b261faa1" alt="Image 1" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/77fd09f0-9d7d-4a1f-8853-8e4de96307e2" alt="Image 2" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/0527c7a9-9351-4b6d-bed6-7a55401ded47" alt="Image 3" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/fea26ef5-d8c5-42a2-9feb-29372f932e56" alt="Image 4" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center">Sign Up page.</td>
+    <td align="center">Login Page</td>
+    <td align="center">Dashboard Page</td>
+    <td align="center">Send money page</td>
+  </tr>
+</table>
+
+---
 
 ## Features
 
@@ -149,22 +167,6 @@ To make the Paytm clone application more robust, scalable, and user-friendly, th
 
 ---
 
-- **Screenshots of the Application in Action.**
-
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/11b9f251-be39-45d6-923f-5256b261faa1" alt="Image 1" width="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/77fd09f0-9d7d-4a1f-8853-8e4de96307e2" alt="Image 2" width="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/0527c7a9-9351-4b6d-bed6-7a55401ded47" alt="Image 3" width="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/fea26ef5-d8c5-42a2-9feb-29372f932e56" alt="Image 4" width="400"></td>
-  </tr>
-  <tr>
-    <td align="center">Sign Up page.</td>
-    <td align="center">Login Page</td>
-    <td align="center">Dashboard Page</td>
-    <td align="center">Send money page</td>
-  </tr>
-</table>
 
 
 
