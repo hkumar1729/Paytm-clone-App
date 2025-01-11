@@ -88,7 +88,7 @@ npm install
 - Replace the placeholder connection string with your MongoDB connection string from MongoDB Atlas:
   ```javascript
   const mongoose = require('mongoose');
-  mongoose.connect('<Your MongoDB Connection String>', { useNewUrlParser: true, useUnifiedTopology: true });
+  mongoose.connect('<Your MongoDB Connection String>');
   ```
 
 ---
